@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <marquee behavior="scroll" direction="left" scrollamount="5"><h1>REGISTRATION FORM</h1></marquee>
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="100" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" required>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+      <label for="searchCourses">Search Courses:</label>
+      <input type="search" id="searchCourses" name="searchCourses" placeholder="Search for courses" required>
+
+      <label for="course">course:</label>
+      <select id="course" name="course" required>
+        <option value="">Select Course</option>
+        <optgroup label="B.Tech">
+          <option value="CSE">CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="MECH">MECH</option>
+        </optgroup>
+        <optgroup label="DEGREE">
+          <option value="B.SC">B.SC</option>
+          <option value="B.COM">B.COM</option>
+          <option value="BA">BA</option>
+        </optgroup>
+        <optgroup label="INTER">
+          <option value="MPC">MPC</option>
+          <option value="BIPC">BIPC</option>
+          <option value="CEC">CEC</option>
+        </optgroup>
+      </select>
+
+      <label for="about">Tell us about yourself:</label>
+      <textarea id="about" name="about" rows="4" required></textarea>
+
+      <label for="agree">I agree to the terms and conditions:</label>
+      <input type="checkbox" id="agree" name="agree" required>
+
+      <label for="file">Upload your ID:</label>
+      <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
+
+      <label for="color">Favorite color:</label>
+      <input type="color" id="color" name="color" required>
+
+      <label for="range">Rate your experience (1-10):</label>
+      <input type="range" id="range" name="range" min="1" max="10" required>
+
+      <label for="time">Preferred time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="month">Month:</label>
+      <input type="month" id="month" name="month" required>
+
+      <label for="week">Week:</label>
+      <input type="week" id="week" name="week" required>
+
+      <label for="datetime-local">Date and time:</label>
+      <input type="datetime-local" id="datetime-local" name="datetime-local" required>
+
+      <label for="datalist">Select your favourite color:</label>
+      <input type="text" list="colors" name="datalist" required>
+      <datalist id="colors">
+        <option value="Red">
+        <option value="Green">
+        <option value="Blue">
+        <option value="Yellow">
+        <option value="Orange">
+      </datalist>
+      <label for="semester">Semester:</label>
+      <input type="number" id="semester" name="semester" min="1" max="8" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+
+      <label for="hidden">Hidden input:</label>
+      <input type="hidden" id="hidden" name="hidden" value="hidden-value">
+
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+</body>
+</html>
